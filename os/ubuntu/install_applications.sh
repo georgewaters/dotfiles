@@ -15,7 +15,6 @@ declare -a APT_PACKAGES=(
     #"ubuntu-restricted-extras"
 
     # Other
-    "atom"
     "chromium-browser"
     "curl"
     "firefox-trunk"
@@ -29,6 +28,7 @@ declare -a APT_PACKAGES=(
     "npm"
     "opera"
     "opera-next"
+    "sublime-text-installer"
     "transmission"
     "vim-gnome"
     "virtualbox"
@@ -52,10 +52,6 @@ add_ppa() {
 
 add_software_sources() {
 
-    # Atom
-    [ $(cmd_exists "atom") -eq 1 ] \
-        && add_ppa "webupd8team/atom"
-
     # Firefox Nightly
     [ $(cmd_exists "firefox-trunk") -eq 1 ] \
         && add_ppa "ubuntu-mozilla-daily/ppa"
@@ -77,6 +73,10 @@ add_software_sources() {
         && add_source_list \
                 "http://deb.opera.com/opera/ stable non-free" \
                 "opera.list"
+
+    # Sublime Text 3
+    [ $(cmd_exists "subl") -eq 1 ] \
+        && add_ppa "webupd8team/sublime-text-3"
 
 }
 

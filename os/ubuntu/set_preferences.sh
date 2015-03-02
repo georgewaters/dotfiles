@@ -20,8 +20,8 @@ set_privacy_settings() {
 set_ui_and_ux_settings() {
 
     # Hide the bluetooth and volume icons from the menu bar
-    gsettings set com.canonical.indicator.bluetooth visible false
-    gsettings set com.canonical.indicator.sound visible false
+    gsettings set com.canonical.indicator.bluetooth visible true
+    gsettings set com.canonical.indicator.sound visible true
 
     # Hide the battery icon from the menu bar when the battery is not in use
     gsettings set com.canonical.indicator.power icon-policy "charge"
@@ -38,18 +38,6 @@ set_ui_and_ux_settings() {
 
     # Set keyboard languages
     gsettings set org.gnome.libgnomekbd.keyboard layouts "[ 'us', 'ro' ]"
-
-    # Set Launcher favorites
-    gsettings set com.canonical.Unity.Launcher favorites "[
-        'ubiquity-gtkui.desktop',
-        'nautilus-home.desktop',
-        'chromium-browser.desktop',
-        'google-chrome.desktop',
-        'firefox.desktop',
-        'firefox-trunk.desktop',
-        'opera-browser.desktop',
-        'opera-next-browser.desktop'
-    ]"
 
 }
 

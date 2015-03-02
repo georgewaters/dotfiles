@@ -96,11 +96,10 @@ alias c="clear"
 alias ch="history -c && > ~/.bash_history"
 alias e="vim"
 alias g="git"
-alias ll="ls -l"
+alias ll="ls -lah"
 alias m="man"
 alias map="xargs -n1"
 alias q="exit"
-alias rm="rm -rf"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
