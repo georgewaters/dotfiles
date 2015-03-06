@@ -78,17 +78,6 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    print_info "Create directories"
-
-    ask_for_confirmation "Do you want the additional directories to be created?"
-    printf "\n"
-
-    if answer_is_yes; then
-        ./os/create_directories.sh
-    fi
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
     print_info "Copy files"
     ./os/copy_files.sh
 
