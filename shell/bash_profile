@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BASH_CONFIG_PATH=${XDG_CONFIG_HOME:=$HOME/.config}/bash
+
 # ----------------------------------------------------------------------
 # | Helper Functions                                                   |
 # ----------------------------------------------------------------------
@@ -8,39 +10,9 @@ enable_programmable_completion() {
 
     # Enable programmable completion features
     # http://tldp.org/LDP/abs/html/tabexpansion.html
-
-    if [ "$OS" == "osx" ]; then
-        if [ -f $(brew --prefix)/etc/bash_completion ]; then
-
-            source $(brew --prefix)/etc/bash_completion
-
-            # Make bash complete the `g` alias, just like it does `git`
-            complete -o default -o nospace -F _git g
-        fi
-    elif [ "$OS" == "ubuntu" ]; then
-        if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-            source /etc/bash_completion
-        fi
+    if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+        source /etc/bash_completion
     fi
-
-}
-
-get_os() {
-
-    declare -r OS_NAME="$(uname -s)"
-    local os=""
-
-    if [ "$OS_NAME" == "Darwin" ]; then
-        os="osx"
-
-    # Get Linux distribution
-    # https://web.archive.org/web/20130929034731/http://linuxmafia.com/faq/Admin/release-files.html
-    elif [ "$OS_NAME" == "Linux" ] && \
-         [ -e "/etc/lsb-release" ]; then
-        os="ubuntu"
-    fi
-
-    printf "%s" "$os"
 }
 
 source_bash_files() {
@@ -58,11 +30,11 @@ source_bash_files() {
                       # not be under version control
     )
 
-    for i in ${!FILES_TO_SOURCE[*]}; do
-        file="$HOME/.${FILES_TO_SOURCE[$i]}"
-        [ -r "$file" ] && source "$file"
-    done
-
+    if [ -d $BASH_CONFIG_PATH ]; then
+        for file in $BASH_CONFIG_PATH/*; do
+            source $file
+        done
+    fi
 }
 
 # ----------------------------------------------------------------------
@@ -70,11 +42,6 @@ source_bash_files() {
 # ----------------------------------------------------------------------
 
 main() {
-
-    # The presence of the OS variable in this scope is important as
-    # the following functions rely on it (e.g. the sourced files use
-    # it to determine what to execute)
-    declare -r OS="$(get_os)"
 
     source_bash_files
     enable_programmable_completion
@@ -87,7 +54,6 @@ main
 
 # Unset functions in order to not pollute the global space
 unset -f enable_programmable_completion
-unset -f get_os
 unset -f main
 unset -f source_bash_files
 
