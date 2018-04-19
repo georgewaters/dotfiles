@@ -6,8 +6,12 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.bashrc: shell/bashrc
-    ~/.bash_profile: shell/bash_profile
+    ~/.bashrc:
+      force: true
+      path: shell/bashrc
+    ~/.bash_profile:
+      force: true
+      path: shell/bash_profile
     $XDG_CONFIG_HOME/bash: shell/config/
     $XDG_CONFIG_HOME/vim: vim/
     $XDG_CONFIG_HOME/git: git/
