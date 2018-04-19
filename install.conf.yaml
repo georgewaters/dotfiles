@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.bashrc: shell/bashrc
+    ~/.bash_profile: shell/bash_profile
+    $XDG_CONFIG_HOME/bash: shell/config/
+    $XDG_CONFIG_HOME/vim: vim/
+    $XDG_CONFIG_HOME/git: git/

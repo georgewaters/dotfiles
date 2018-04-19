@@ -28,20 +28,6 @@ elif [ "$OS" == "ubuntu" ]; then
                    cut -d' ' -f1"
 fi
 
-# ----------------------------------------------------------------------
-# | Package Managers                                                   |
-# ----------------------------------------------------------------------
-
-# npm
-# https://docs.npmjs.com/
-
-if [ -x "$(command -v npm)" ]; then
-    alias npmi="npm install"
-    alias npmr="npm uninstall"
-    alias npms="npm search"
-    alias npmu="npm update"
-fi
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # OS specific package managers
@@ -171,3 +157,11 @@ if [ "$OS" == "osx" ]; then
     alias use-node="brew unlink iojs && brew link --force node"
     alias use-iojs="brew unlink node && brew link --force iojs"
 fi
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# HouseSimple
+
+alias who-has-sandbox='ssh -q legacy-site-01.apps.sandbox.hs tail -1 /srv/apps/sites/legacy/master/revisions.log'
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

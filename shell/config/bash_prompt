@@ -271,7 +271,7 @@ set_prompts() {
 
 main() {
     enable_color_support
-    set_ls_colors
+#    set_ls_colors
     set_prompts
 }
 
