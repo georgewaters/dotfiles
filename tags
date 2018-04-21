@@ -772,15 +772,8 @@ analyze_scalar	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def analyze_scalar(se
 analyze_scalar	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def analyze_scalar(self, scalar):$/;"	m	class:Emitter
 anchor_node	dotbot/lib/pyyaml/lib/yaml/serializer.py	/^    def anchor_node(self, node):$/;"	m	class:Serializer
 anchor_node	dotbot/lib/pyyaml/lib3/yaml/serializer.py	/^    def anchor_node(self, node):$/;"	m	class:Serializer
-append_ul	vim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
 ascend_resolver	dotbot/lib/pyyaml/lib/yaml/resolver.py	/^    def ascend_resolver(self):$/;"	m	class:BaseResolver
 ascend_resolver	dotbot/lib/pyyaml/lib3/yaml/resolver.py	/^    def ascend_resolver(self):$/;"	m	class:BaseResolver
-ask	vim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
-ask_no_interrupt	vim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
-assign_name	vim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
-assoc	vim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
-bang	vim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
-bar	vim/autoload/plug.vim	/^function! s:bar()$/;"	f
 base64	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^import collections, datetime, base64, binascii, re, sys, types$/;"	i
 base64	dotbot/lib/pyyaml/lib3/yaml/representer.py	/^import datetime, sys, copyreg, types, base64$/;"	i
 base_directory	dotbot/dotbot/context.py	/^    def base_directory(self):$/;"	m	class:Context
@@ -862,7 +855,6 @@ check_printable	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def check_printable(s
 check_printable	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def check_printable(self, data):$/;"	m	class:Reader
 check_resolver_prefix	dotbot/lib/pyyaml/lib/yaml/resolver.py	/^    def check_resolver_prefix(self, depth, path, kind,$/;"	m	class:BaseResolver
 check_resolver_prefix	dotbot/lib/pyyaml/lib3/yaml/resolver.py	/^    def check_resolver_prefix(self, depth, path, kind,$/;"	m	class:BaseResolver
-check_ruby	vim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
 check_simple_key	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def check_simple_key(self):$/;"	m	class:Emitter
 check_simple_key	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def check_simple_key(self):$/;"	m	class:Emitter
 check_token	dotbot/lib/pyyaml/ext/_yaml.pyx	/^    def check_token(self, *choices):$/;"	m	class:CParser
@@ -873,12 +865,9 @@ check_token	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^    def check_token(self
 check_value	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def check_value(self):$/;"	m	class:Scanner
 check_value	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def check_value(self):$/;"	m	class:Scanner
 check_vm	dotbot/test/test-lib.bash	/^check_vm() {$/;"	f
-checkout	vim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
 choose_scalar_style	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def choose_scalar_style(self):$/;"	m	class:Emitter
 choose_scalar_style	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def choose_scalar_style(self):$/;"	m	class:Emitter
-chsh	vim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
 classobj	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    class classobj: pass$/;"	c	class:Constructor
-clean	vim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
 cleanup	dotbot/test/driver-lib.bash	/^cleanup() {$/;"	f
 close	dotbot/lib/pyyaml/ext/_yaml.pyx	/^    def close(self):$/;"	m	class:CEmitter
 close	dotbot/lib/pyyaml/lib/yaml/serializer.py	/^    def close(self):$/;"	m	class:Serializer
@@ -890,7 +879,6 @@ codecs	dotbot/lib/pyyaml/tests/lib/test_input_output.py	/^import codecs, StringI
 codecs	dotbot/lib/pyyaml/tests/lib/test_reader.py	/^import codecs$/;"	i
 codecs	dotbot/lib/pyyaml/tests/lib3/test_input_output.py	/^import codecs, io, tempfile, os, os.path$/;"	i
 collections	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^import collections, datetime, base64, binascii, re, sys, types$/;"	i
-compare_git_uri	vim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
 compose	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def compose(stream, Loader=Loader):$/;"	f
 compose	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^def compose(stream, Loader=Loader):$/;"	f
 compose_all	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def compose_all(stream, Loader=Loader):$/;"	f
@@ -1001,9 +989,6 @@ datetime	dotbot/lib/pyyaml/tests/lib/test_constructor.py	/^import datetime$/;"	i
 datetime	dotbot/lib/pyyaml/tests/lib3/test_constructor.py	/^import datetime$/;"	i
 debug	dotbot/dotbot/messenger/messenger.py	/^    def debug(self, message):$/;"	m	class:Messenger
 defaults	dotbot/dotbot/context.py	/^    def defaults(self):$/;"	m	class:Context
-define_commands	vim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
-delete	vim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
-delete_op	vim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
 descend_resolver	dotbot/lib/pyyaml/lib/yaml/resolver.py	/^    def descend_resolver(self, current_node, current_index):$/;"	m	class:BaseResolver
 descend_resolver	dotbot/lib/pyyaml/lib3/yaml/resolver.py	/^    def descend_resolver(self, current_node, current_index):$/;"	m	class:BaseResolver
 determine_block_hints	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def determine_block_hints(self, text):$/;"	m	class:Emitter
@@ -1011,8 +996,6 @@ determine_block_hints	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def determine
 determine_encoding	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def determine_encoding(self):$/;"	m	class:Reader
 determine_encoding	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def determine_encoding(self):$/;"	m	class:Reader
 die	dotbot/test/driver-lib.bash	/^die() {$/;"	f
-diff	vim/autoload/plug.vim	/^function! s:diff()$/;"	f
-dirpath	vim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
 dispatch	dotbot/dotbot/dispatcher.py	/^    def dispatch(self, tasks):$/;"	m	class:Dispatcher
 display	dotbot/lib/pyyaml/tests/lib/test_appliance.py	/^def display(results, verbose):$/;"	f
 display	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^def display(results, verbose):$/;"	f
@@ -1028,9 +1011,6 @@ distutils	dotbot/lib/pyyaml/tests/lib/test_build.py	/^    import sys, os, distut
 distutils	dotbot/lib/pyyaml/tests/lib/test_build_ext.py	/^    import sys, os, distutils.util$/;"	i
 distutils	dotbot/lib/pyyaml/tests/lib3/test_build.py	/^    import sys, os, distutils.util$/;"	i
 distutils	dotbot/lib/pyyaml/tests/lib3/test_build_ext.py	/^    import sys, os, distutils.util$/;"	i
-do	vim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
-doautocmd	vim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
-dobufread	vim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
 dotbot	dotbot/plugins/clean.py	/^import os, dotbot$/;"	i
 dotbot	dotbot/plugins/link.py	/^import dotbot$/;"	i
 dotbot	dotbot/plugins/shell.py	/^import os, subprocess, dotbot$/;"	i
@@ -1045,10 +1025,7 @@ emit	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def emit(events, stream=None, Dump
 emit	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def emit(self, event):$/;"	m	class:Emitter
 emit	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^def emit(events, stream=None, Dumper=Dumper,$/;"	f
 emit	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def emit(self, event):$/;"	m	class:Emitter
-err	vim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
 error	dotbot/dotbot/messenger/messenger.py	/^    def error(self, message):$/;"	m	class:Messenger
-esc	vim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
-escrtp	vim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
 execute	dotbot/lib/pyyaml/tests/lib/test_appliance.py	/^def execute(function, filenames, verbose):$/;"	f
 execute	dotbot/lib/pyyaml/tests/lib/test_constructor.py	/^def execute(code):$/;"	f
 execute	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^def execute(function, filenames, verbose):$/;"	f
@@ -1104,7 +1081,6 @@ expect_scalar	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def expect_scalar(sel
 expect_stream_start	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def expect_stream_start(self):$/;"	m	class:Emitter
 expect_stream_start	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def expect_stream_start(self):$/;"	m	class:Emitter
 ext_status	dotbot/lib/pyyaml/setup.py	/^    def ext_status(self, ext):$/;"	m	class:Distribution
-extract_name	vim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
 fail	dotbot/test/driver-lib.bash	/^fail() {$/;"	f
 fetch_alias	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def fetch_alias(self):$/;"	m	class:Scanner
 fetch_alias	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def fetch_alias(self):$/;"	m	class:Scanner
@@ -1162,7 +1138,6 @@ fetch_value	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def fetch_value(self):$/
 fetch_value	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def fetch_value(self):$/;"	m	class:Scanner
 filenames	dotbot/lib/pyyaml/examples/pygments-lexer/yaml.py	/^    filenames = ['*.yaml', '*.yml']$/;"	v	class:YAMLLexer
 finalize_options	dotbot/lib/pyyaml/setup.py	/^    def finalize_options(self):$/;"	m	class:test
-find_name	vim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
 find_python_module	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    def find_python_module(self, name, mark):$/;"	m	class:Constructor
 find_python_module	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^    def find_python_module(self, name, mark):$/;"	m	class:Constructor
 find_python_name	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    def find_python_name(self, name, mark):$/;"	m	class:Constructor
@@ -1173,14 +1148,10 @@ find_test_functions	dotbot/lib/pyyaml/tests/lib/test_appliance.py	/^def find_tes
 find_test_functions	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^def find_test_functions(collections):$/;"	f
 find_token	dotbot/lib/pyyaml/tests/lib/canonical.py	/^    def find_token(self):$/;"	m	class:CanonicalScanner
 find_token	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^    def find_token(self):$/;"	m	class:CanonicalScanner
-finish	vim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
-finish_bindings	vim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
 flatten_mapping	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    def flatten_mapping(self, node):$/;"	m	class:SafeConstructor
 flatten_mapping	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^    def flatten_mapping(self, node):$/;"	m	class:SafeConstructor
 flush_stream	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def flush_stream(self):$/;"	m	class:Emitter
 flush_stream	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def flush_stream(self):$/;"	m	class:Emitter
-format_git_log	vim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
-format_message	vim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
 forward	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def forward(self, length=1):$/;"	m	class:Reader
 forward	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def forward(self, length=1):$/;"	m	class:Reader
 from_yaml	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^    def from_yaml(cls, loader, node):$/;"	m	class:YAMLObject
@@ -1197,13 +1168,11 @@ from_yaml	dotbot/lib/pyyaml/tests/lib3/test_constructor.py	/^        from_yaml =
 g:gutentags_cache_dir	vim/ftplugin/php.vim	/^let g:gutentags_cache_dir = '~\/.vim\/gutentags'$/;"	v
 g:gutentags_ctags_exclude	vim/ftplugin/php.vim	/^let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',$/;"	v
 g:gutentags_define_advanced_commands	vim/config.vim	/^let g:gutentags_define_advanced_commands=1$/;"	v
-g:loaded_plug	vim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
 g:neomake_javascript_enabled_makers	vim/ftplugin/javascript.vim	/^let g:neomake_javascript_enabled_makers = ['eslint']$/;"	v
 g:neomake_javascript_eslint_maker	vim/ftplugin/javascript.vim	/^let g:neomake_javascript_eslint_maker = {$/;"	v
 g:neomake_jsx_enabled_makers	vim/ftplugin/javascript.vim	/^let g:neomake_jsx_enabled_makers = ['eslint']$/;"	v
 g:neomake_open_list	vim/ftplugin/javascript.vim	/^let g:neomake_open_list=2$/;"	v
 g:netrw_home	vim/xdg.vim	/^let g:netrw_home=$XDG_CACHE_HOME . '\/vim'$/;"	v
-g:plugs_order	vim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
 g:projectlocal_project_markers	vim/config.vim	/^let g:projectlocal_project_markers = ['.git', '.vimrc', 'package.json']$/;"	v
 generate_anchor	dotbot/lib/pyyaml/lib/yaml/serializer.py	/^    def generate_anchor(self, node):$/;"	m	class:Serializer
 generate_anchor	dotbot/lib/pyyaml/lib3/yaml/serializer.py	/^    def generate_anchor(self, node):$/;"	m	class:Serializer
@@ -1241,19 +1210,14 @@ get_token_value	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^    def get_token_va
 get_tokens_unprocessed	dotbot/lib/pyyaml/examples/pygments-lexer/yaml.py	/^    def get_tokens_unprocessed(self, text=None, context=None):$/;"	m	class:YAMLLexer
 get_version	dotbot/lib/pyyaml/ext/_yaml.pyx	/^def get_version():$/;"	f
 get_version_string	dotbot/lib/pyyaml/ext/_yaml.pyx	/^def get_version_string():$/;"	f
-git_validate	vim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
-git_version_requirement	vim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
 glob	dotbot/dotbot/cli.py	/^import os, glob$/;"	i
 glob	dotbot/plugins/link.py	/^import glob$/;"	i
-glob	vim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
-glob_dir	vim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
 green	dotbot/test/driver-lib.bash	/^green() {$/;"	f
 handle	dotbot/dotbot/plugin.py	/^    def handle(self, directive, data):$/;"	m	class:Plugin
 handle	dotbot/plugins/clean.py	/^    def handle(self, directive, data):$/;"	m	class:Clean
 handle	dotbot/plugins/link.py	/^    def handle(self, directive, data):$/;"	m	class:Link
 handle	dotbot/plugins/shell.py	/^    def handle(self, directive, data):$/;"	m	class:Shell
 has_ext_modules	dotbot/lib/pyyaml/setup.py	/^    def has_ext_modules(self):$/;"	m	class:Distribution
-hash_match	vim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
 highlight	dotbot/lib/pyyaml/examples/yaml-highlight/yaml_hl.py	/^    def highlight(self):$/;"	m	class:YAMLHighlight
 hl	dotbot/lib/pyyaml/examples/yaml-highlight/yaml_hl.py	/^    hl = YAMLHighlight(options)$/;"	v	class:YAMLHighlight
 id	dotbot/lib/pyyaml/lib/yaml/nodes.py	/^    id = 'mapping'$/;"	v	class:MappingNode
@@ -1316,44 +1280,24 @@ inf_value	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    inf_value = 1e300$/;"	
 inf_value	dotbot/lib/pyyaml/lib/yaml/representer.py	/^    inf_value = 1e300$/;"	v	class:SafeRepresenter
 inf_value	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^    inf_value = 1e300$/;"	v	class:SafeConstructor
 inf_value	dotbot/lib/pyyaml/lib3/yaml/representer.py	/^    inf_value = 1e300$/;"	v	class:SafeRepresenter
-infer_properties	vim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
 info	dotbot/dotbot/messenger/messenger.py	/^    def info(self, message):$/;"	m	class:Messenger
 initialize	dotbot/test/driver-lib.bash	/^initialize() {$/;"	f
 initialize	dotbot/test/test-lib.bash	/^initialize() {$/;"	f
 initialize_options	dotbot/lib/pyyaml/setup.py	/^    def initialize_options(self):$/;"	m	class:test
 input_handler	dotbot/lib/pyyaml/ext/_yaml.pyx	/^cdef int input_handler(void *data, char *buffer, int size, int *read) except 0:$/;"	f
-install	vim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
 io	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^import io$/;"	i
 io	dotbot/lib/pyyaml/tests/lib3/test_input_output.py	/^import codecs, io, tempfile, os, os.path$/;"	i
-is_local_plug	vim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
-is_managed	vim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
-is_preview_window_open	vim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
-is_updated	vim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
-job_abort	vim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
-job_handler	vim/autoload/plug.vim	/^function! s:job_handler(job_id, data, event) abort$/;"	f
 json	dotbot/dotbot/config.py	/^import json$/;"	i
-lastline	vim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
-lines	vim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
 load	dotbot/dotbot/util/module.py	/^def load(path):$/;"	f
 load	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def load(stream, Loader=Loader):$/;"	f
 load	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^def load(stream, Loader=Loader):$/;"	f
 load_all	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def load_all(stream, Loader=Loader):$/;"	f
 load_all	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^def load_all(stream, Loader=Loader):$/;"	f
 load_module	dotbot/dotbot/util/module.py	/^  def load_module(module_name, path):$/;"	f
-load_plugin	vim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
 loaded_modules	dotbot/dotbot/util/module.py	/^loaded_modules = []$/;"	v
-loaded_names	vim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
-lod	vim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
-lod_cmd	vim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
-lod_ft	vim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
-lod_map	vim/autoload/plug.vim	/^function! s:lod_map(map, names, prefix)$/;"	f
 log	dotbot/dotbot/messenger/messenger.py	/^    def log(self, level, message):$/;"	m	class:Messenger
 log	dotbot/lib/pyyaml/setup.py	/^from distutils import log$/;"	i
-log	vim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
-log4	vim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
-logpos	vim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
 lowinfo	dotbot/dotbot/messenger/messenger.py	/^    def lowinfo(self, message):$/;"	m	class:Messenger
-lpad	vim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
 main	dotbot/bin/dotbot	/^    main()$/;"	f
 main	dotbot/dotbot/__init__.py	/^from .cli import main$/;"	i
 main	dotbot/dotbot/cli.py	/^def main():$/;"	f
@@ -1366,7 +1310,6 @@ mimetypes	dotbot/lib/pyyaml/examples/pygments-lexer/yaml.py	/^    mimetypes = ['
 mkpath	dotbot/lib/pyyaml/setup.py	/^from distutils.dir_util import mkpath$/;"	i
 module	dotbot/dotbot/cli.py	/^from .util import module$/;"	i
 name	dotbot/lib/pyyaml/examples/pygments-lexer/yaml.py	/^    name = 'YAML'$/;"	v	class:YAMLLexer
-names	vim/autoload/plug.vim	/^function! s:names(...)$/;"	f
 nan_value	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    nan_value = -inf_value\/inf_value   # Trying to make a quiet NaN (like C99).$/;"	v	class:SafeConstructor
 nan_value	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^    nan_value = -inf_value\/inf_value   # Trying to make a quiet NaN (like C99).$/;"	v	class:SafeConstructor
 need_events	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def need_events(self, count):$/;"	m	class:Emitter
@@ -1405,7 +1348,6 @@ new_serialize	dotbot/lib/pyyaml/tests/lib/test_yaml_ext.py	/^def new_serialize(n
 new_serialize	dotbot/lib/pyyaml/tests/lib3/test_yaml_ext.py	/^def new_serialize(node, stream, Dumper=yaml.CDumper, **kwds):$/;"	f
 new_serialize_all	dotbot/lib/pyyaml/tests/lib/test_yaml_ext.py	/^def new_serialize_all(nodes, stream=None, Dumper=yaml.CDumper, **kwds):$/;"	f
 new_serialize_all	dotbot/lib/pyyaml/tests/lib3/test_yaml_ext.py	/^def new_serialize_all(nodes, stream=None, Dumper=yaml.CDumper, **kwds):$/;"	f
-new_window	vim/autoload/plug.vim	/^function! s:new_window()$/;"	f
 next_possible_simple_key	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def next_possible_simple_key(self):$/;"	m	class:Scanner
 next_possible_simple_key	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def next_possible_simple_key(self):$/;"	m	class:Scanner
 old_compose	dotbot/lib/pyyaml/tests/lib/test_yaml_ext.py	/^old_compose = yaml.compose$/;"	v
@@ -1522,7 +1464,6 @@ parse_node	dotbot/lib/pyyaml/lib/yaml/parser.py	/^    def parse_node(self, block
 parse_node	dotbot/lib/pyyaml/lib3/yaml/parser.py	/^    def parse_node(self, block=False, indentless_sequence=False):$/;"	m	class:Parser
 parse_node	dotbot/lib/pyyaml/tests/lib/canonical.py	/^    def parse_node(self):$/;"	m	class:CanonicalParser
 parse_node	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^    def parse_node(self):$/;"	m	class:CanonicalParser
-parse_options	vim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
 parse_plain_scalar_indent	dotbot/lib/pyyaml/examples/pygments-lexer/yaml.py	/^def parse_plain_scalar_indent(TokenClass):$/;"	f
 parse_sequence	dotbot/lib/pyyaml/tests/lib/canonical.py	/^    def parse_sequence(self):$/;"	m	class:CanonicalParser
 parse_sequence	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^    def parse_sequence(self):$/;"	m	class:CanonicalParser
@@ -1540,7 +1481,6 @@ path	dotbot/lib/pyyaml/tests/lib/test_appliance.py	/^import sys, os, os.path, ty
 path	dotbot/lib/pyyaml/tests/lib/test_input_output.py	/^import codecs, StringIO, tempfile, os, os.path$/;"	i
 path	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^import sys, os, os.path, types, traceback, pprint$/;"	i
 path	dotbot/lib/pyyaml/tests/lib3/test_input_output.py	/^import codecs, io, tempfile, os, os.path$/;"	i
-path	vim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
 peek	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def peek(self, index=0):$/;"	m	class:Reader
 peek	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def peek(self, index=0):$/;"	m	class:Reader
 peek_event	dotbot/lib/pyyaml/ext/_yaml.pyx	/^    def peek_event(self):$/;"	m	class:CParser
@@ -1553,12 +1493,6 @@ peek_token	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def peek_token(self):$/;"
 peek_token	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def peek_token(self):$/;"	m	class:Scanner
 peek_token	dotbot/lib/pyyaml/tests/lib/canonical.py	/^    def peek_token(self):$/;"	m	class:CanonicalScanner
 peek_token	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^    def peek_token(self):$/;"	m	class:CanonicalScanner
-plug#	vim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
-plug#begin	vim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
-plug#end	vim/autoload/plug.vim	/^function! plug#end()$/;"	f
-plug#helptags	vim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
-plug#load	vim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
-plug_window_exists	vim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
 pprint	dotbot/lib/pyyaml/tests/lib/test_appliance.py	/^import sys, os, os.path, types, traceback, pprint$/;"	i
 pprint	dotbot/lib/pyyaml/tests/lib/test_constructor.py	/^import pprint$/;"	i
 pprint	dotbot/lib/pyyaml/tests/lib/test_representer.py	/^import pprint$/;"	i
@@ -1575,7 +1509,6 @@ pprint	dotbot/lib/pyyaml/tests/lib3/test_tokens.py	/^import pprint$/;"	i
 pprint	dotbot/lib/pyyaml/tests/lib3/test_yaml_ext.py	/^import types, pprint$/;"	i
 prefix	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def prefix(self, length=1):$/;"	m	class:Reader
 prefix	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def prefix(self, length=1):$/;"	m	class:Reader
-prepare	vim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
 prepare_anchor	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def prepare_anchor(self, anchor):$/;"	m	class:Emitter
 prepare_anchor	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def prepare_anchor(self, anchor):$/;"	m	class:Emitter
 prepare_tag	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def prepare_tag(self, tag):$/;"	m	class:Emitter
@@ -1586,7 +1519,6 @@ prepare_tag_prefix	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def prepare_tag_p
 prepare_tag_prefix	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def prepare_tag_prefix(self, prefix):$/;"	m	class:Emitter
 prepare_version	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def prepare_version(self, version):$/;"	m	class:Emitter
 prepare_version	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def prepare_version(self, version):$/;"	m	class:Emitter
-preview_commit	vim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
 process_anchor	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def process_anchor(self, indicator):$/;"	m	class:Emitter
 process_anchor	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def process_anchor(self, indicator):$/;"	m	class:Emitter
 process_directives	dotbot/lib/pyyaml/lib/yaml/parser.py	/^    def process_directives(self):$/;"	m	class:Parser
@@ -1597,8 +1529,6 @@ process_scalar	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def process_scalar(se
 process_scalar	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def process_scalar(self):$/;"	m	class:Emitter
 process_tag	dotbot/lib/pyyaml/lib/yaml/emitter.py	/^    def process_tag(self):$/;"	m	class:Emitter
 process_tag	dotbot/lib/pyyaml/lib3/yaml/emitter.py	/^    def process_tag(self):$/;"	m	class:Emitter
-progress_bar	vim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
-progress_opt	vim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
 raw_parse	dotbot/lib/pyyaml/ext/_yaml.pyx	/^    def raw_parse(self):$/;"	m	class:CParser
 raw_scan	dotbot/lib/pyyaml/ext/_yaml.pyx	/^    def raw_scan(self):$/;"	m	class:CParser
 re	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^import binascii, re, sys, types$/;"	i
@@ -1610,16 +1540,10 @@ re	dotbot/lib/pyyaml/lib3/yaml/resolver.py	/^import re$/;"	i
 read_config	dotbot/dotbot/cli.py	/^def read_config(config_file):$/;"	f
 reader	dotbot/lib/pyyaml/tests/lib/test_reader.py	/^import yaml.reader$/;"	i
 reader	dotbot/lib/pyyaml/tests/lib3/test_reader.py	/^import yaml.reader$/;"	i
-reap	vim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
 red	dotbot/test/driver-lib.bash	/^red() {$/;"	f
-regress_bar	vim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
-reload_plugins	vim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
 reload_vimrc	vim/config.vim	/^augroup reload_vimrc " {$/;"	a
 remove_possible_simple_key	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def remove_possible_simple_key(self):$/;"	m	class:Scanner
 remove_possible_simple_key	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def remove_possible_simple_key(self):$/;"	m	class:Scanner
-remove_rtp	vim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
-remove_triggers	vim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
-reorg_rtp	vim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
 report	dotbot/test/driver-lib.bash	/^report() {$/;"	f
 represent	dotbot/lib/pyyaml/lib/yaml/representer.py	/^    def represent(self, data):$/;"	m	class:BaseRepresenter
 represent	dotbot/lib/pyyaml/lib3/yaml/representer.py	/^    def represent(self, data):$/;"	m	class:BaseRepresenter
@@ -1679,10 +1603,6 @@ resolve	dotbot/lib/pyyaml/lib/yaml/resolver.py	/^    def resolve(self, kind, val
 resolve	dotbot/lib/pyyaml/lib3/yaml/resolver.py	/^    def resolve(self, kind, value, implicit):$/;"	m	class:BaseResolver
 resolver	dotbot/lib/pyyaml/tests/lib/canonical.py	/^import yaml, yaml.composer, yaml.constructor, yaml.resolver$/;"	i
 resolver	dotbot/lib/pyyaml/tests/lib3/canonical.py	/^import yaml, yaml.composer, yaml.constructor, yaml.resolver$/;"	i
-retry	vim/autoload/plug.vim	/^function! s:retry()$/;"	f
-revert	vim/autoload/plug.vim	/^function! s:revert()$/;"	f
-rm_rf	vim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
-rtp	vim/autoload/plug.vim	/^  function! s:rtp(spec)$/;"	f
 run	dotbot/lib/pyyaml/setup.py	/^    def run(self):$/;"	m	class:build_ext
 run	dotbot/lib/pyyaml/setup.py	/^    def run(self):$/;"	m	class:test
 run	dotbot/lib/pyyaml/tests/lib/test_appliance.py	/^def run(collections, args=None):$/;"	f
@@ -1690,21 +1610,7 @@ run	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^def run(collections, args=N
 run_dotbot	dotbot/test/test-lib.bash	/^run_dotbot() {$/;"	f
 run_dotbot_json	dotbot/test/test-lib.bash	/^run_dotbot_json() {$/;"	f
 run_test	dotbot/test/driver-lib.bash	/^run_test() {$/;"	f
-s:TYPE	vim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
-s:base_spec	vim/autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
 s:cache_path	vim/xdg.vim	/^let s:cache_path = exists($XDG_CACHE_HOME) ? $XDG_CACHE_HOME . '\/vim' : $HOME . '\/.cache\/vim'$/;"	v
-s:cpo_save	vim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
-s:first_rtp	vim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
-s:is_win	vim/autoload/plug.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
-s:last_rtp	vim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
-s:loaded	vim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
-s:mac_gui	vim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
-s:me	vim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
-s:nvim	vim/autoload/plug.vim	/^let s:nvim = has('nvim') && exists('*jobwait') && !s:is_win$/;"	v
-s:plug_buf	vim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
-s:plug_src	vim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
-s:plug_tab	vim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
-s:triggers	vim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
 s:vim_plug_path	vim/plugins.vim	/^let s:vim_plug_path = $VIM_CONFIG_PATH.'\/autoload\/plug.vim'$/;"	v
 safe_dump	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def safe_dump(data, stream=None, **kwds):$/;"	f
 safe_dump	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^def safe_dump(data, stream=None, **kwds):$/;"	f
@@ -1781,7 +1687,6 @@ scan_yaml_directive_number	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def scan_
 scan_yaml_directive_number	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def scan_yaml_directive_number(self, start_mark):$/;"	m	class:Scanner
 scan_yaml_directive_value	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def scan_yaml_directive_value(self, start_mark):$/;"	m	class:Scanner
 scan_yaml_directive_value	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def scan_yaml_directive_value(self, start_mark):$/;"	m	class:Scanner
-section	vim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
 serialize	dotbot/lib/pyyaml/ext/_yaml.pyx	/^    def serialize(self, node):$/;"	m	class:CEmitter
 serialize	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^def serialize(node, stream=None, Dumper=Dumper, **kwds):$/;"	f
 serialize	dotbot/lib/pyyaml/lib/yaml/serializer.py	/^    def serialize(self, node):$/;"	m	class:Serializer
@@ -1800,23 +1705,12 @@ set_level	dotbot/dotbot/messenger/messenger.py	/^    def set_level(self, level):
 set_python_instance_state	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    def set_python_instance_state(self, instance, state):$/;"	m	class:Constructor
 set_python_instance_state	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^    def set_python_instance_state(self, instance, state):$/;"	m	class:Constructor
 setup	dotbot/lib/pyyaml/setup.py	/^from distutils.core import setup, Command$/;"	i
-shellesc	vim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
 shutil	dotbot/plugins/link.py	/^import shutil$/;"	i
-snapshot	vim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
 something	dotbot/lib/pyyaml/examples/pygments-lexer/yaml.py	/^def something(TokenClass):$/;"	f
-source	vim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
-spawn	vim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
-split_rtp	vim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
 stale_possible_simple_keys	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def stale_possible_simple_keys(self):$/;"	m	class:Scanner
 stale_possible_simple_keys	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def stale_possible_simple_keys(self):$/;"	m	class:Scanner
-status	vim/autoload/plug.vim	/^function! s:status()$/;"	f
-status_load	vim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
-status_update	vim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
 string	dotbot/dotbot/config.py	/^from .util import string$/;"	i
 subprocess	dotbot/plugins/shell.py	/^import os, subprocess, dotbot$/;"	i
-switch_in	vim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
-switch_out	vim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
-syntax	vim/autoload/plug.vim	/^function! s:syntax()$/;"	f
 sys	dotbot/dotbot/messenger/messenger.py	/^import sys$/;"	i
 sys	dotbot/dotbot/util/module.py	/^import sys, os.path$/;"	i
 sys	dotbot/lib/pyyaml/examples/yaml-highlight/yaml_hl.py	/^import yaml, codecs, sys, os.path, optparse$/;"	i
@@ -1835,8 +1729,6 @@ sys	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^import sys, os, os.path, ty
 sys	dotbot/lib/pyyaml/tests/lib3/test_build.py	/^    import sys, os, distutils.util$/;"	i
 sys	dotbot/lib/pyyaml/tests/lib3/test_build_ext.py	/^    import sys, os, distutils.util$/;"	i
 sys	dotbot/lib/pyyaml/tests/lib3/test_constructor.py	/^    import sys, test_constructor$/;"	i
-system	vim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
-system_chomp	vim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
 tempfile	dotbot/lib/pyyaml/tests/lib/test_input_output.py	/^import codecs, StringIO, tempfile, os, os.path$/;"	i
 tempfile	dotbot/lib/pyyaml/tests/lib3/test_input_output.py	/^import codecs, io, tempfile, os, os.path$/;"	i
 test	dotbot/lib/pyyaml/setup.py	/^class test(Command):$/;"	c
@@ -1982,11 +1874,8 @@ test_yaml_ext	dotbot/lib/pyyaml/tests/lib/test_all.py	/^        import test_yaml
 test_yaml_ext	dotbot/lib/pyyaml/tests/lib/test_build_ext.py	/^    import test_yaml_ext, test_appliance$/;"	i
 test_yaml_ext	dotbot/lib/pyyaml/tests/lib3/test_all.py	/^        import test_yaml_ext$/;"	i
 test_yaml_ext	dotbot/lib/pyyaml/tests/lib3/test_build_ext.py	/^    import test_yaml_ext, test_appliance$/;"	i
-tick	vim/autoload/plug.vim	/^function! s:tick()$/;"	f
 timestamp_regexp	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^    timestamp_regexp = re.compile($/;"	v	class:SafeConstructor
 timestamp_regexp	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^    timestamp_regexp = re.compile($/;"	v	class:SafeConstructor
-to_a	vim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
-to_s	vim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
 to_yaml	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^    def to_yaml(cls, dumper, data):$/;"	m	class:YAMLObject
 to_yaml	dotbot/lib/pyyaml/lib/yaml/__init__.py	/^    to_yaml = classmethod(to_yaml)$/;"	v	class:YAMLObject
 to_yaml	dotbot/lib/pyyaml/lib3/yaml/__init__.py	/^    def to_yaml(cls, dumper, data):$/;"	m	class:YAMLObject
@@ -2006,7 +1895,6 @@ traceback	dotbot/lib/pyyaml/tests/lib3/test_appliance.py	/^import sys, os, os.pa
 travis_cleanup	dotbot/test/test_travis	/^travis_cleanup() {$/;"	f
 travis_initialize	dotbot/test/test_travis	/^travis_initialize() {$/;"	f
 travis_run_test	dotbot/test/test_travis	/^travis_run_test() {$/;"	f
-trim	vim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
 types	dotbot/lib/pyyaml/lib/yaml/constructor.py	/^import binascii, re, sys, types$/;"	i
 types	dotbot/lib/pyyaml/lib/yaml/representer.py	/^import sys, copy_reg, types$/;"	i
 types	dotbot/lib/pyyaml/lib3/yaml/constructor.py	/^import collections, datetime, base64, binascii, re, sys, types$/;"	i
@@ -2022,16 +1910,8 @@ unwind_indent	dotbot/lib/pyyaml/lib/yaml/scanner.py	/^    def unwind_indent(self
 unwind_indent	dotbot/lib/pyyaml/lib3/yaml/scanner.py	/^    def unwind_indent(self, column):$/;"	m	class:Scanner
 update	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def update(self, length):$/;"	m	class:Reader
 update	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def update(self, length):$/;"	m	class:Reader
-update	vim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
-update_finish	vim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
-update_impl	vim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
-update_python	vim/autoload/plug.vim	/^function! s:update_python()$/;"	f
 update_raw	dotbot/lib/pyyaml/lib/yaml/reader.py	/^    def update_raw(self, size=1024):$/;"	m	class:Reader
 update_raw	dotbot/lib/pyyaml/lib3/yaml/reader.py	/^    def update_raw(self, size=4096):$/;"	m	class:Reader
-update_ruby	vim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
-update_vim	vim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
-upgrade	vim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
-upgrade_specs	vim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
 user_options	dotbot/lib/pyyaml/setup.py	/^    user_options = []$/;"	v	class:test
 utcoffset	dotbot/lib/pyyaml/tests/lib/test_constructor.py	/^        def utcoffset(self, dt):$/;"	m	class:_make_objects.FixedOffset
 utcoffset	dotbot/lib/pyyaml/tests/lib3/test_constructor.py	/^        def utcoffset(self, dt):$/;"	m	class:_make_objects.FixedOffset
@@ -2040,13 +1920,10 @@ util	dotbot/lib/pyyaml/tests/lib/test_build.py	/^    import sys, os, distutils.u
 util	dotbot/lib/pyyaml/tests/lib/test_build_ext.py	/^    import sys, os, distutils.util$/;"	i
 util	dotbot/lib/pyyaml/tests/lib3/test_build.py	/^    import sys, os, distutils.util$/;"	i
 util	dotbot/lib/pyyaml/tests/lib3/test_build_ext.py	/^    import sys, os, distutils.util$/;"	i
-version_requirement	vim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
 vim_markdown_preview_github	vim/config.vim	/^let vim_markdown_preview_github=1$/;"	v
 vim_markdown_preview_hotkey	vim/config.vim	/^let vim_markdown_preview_hotkey='<C-m>'$/;"	v
 wait_for_vagrant	dotbot/test/driver-lib.bash	/^wait_for_vagrant() {$/;"	f
-warn	vim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
 warning	dotbot/dotbot/messenger/messenger.py	/^    def warning(self, message):$/;"	m	class:Messenger
-with_cd	vim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
 with_metaclass	dotbot/dotbot/messenger/messenger.py	/^from ..util.compat import with_metaclass$/;"	i
 with_metaclass	dotbot/dotbot/util/compat.py	/^def with_metaclass(meta, *bases):$/;"	f
 with_pyrex	dotbot/lib/pyyaml/setup.py	/^            with_pyrex = 'pyrex'$/;"	v
