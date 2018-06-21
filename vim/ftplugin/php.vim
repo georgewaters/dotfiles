@@ -1,6 +1,6 @@
-let g:gutentags_cache_dir = '~/.vim/gutentags'
-let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
-                            \ '*.phar', '*.ini', '*.rst', '*.md',
-                            \ '*vendor/*/test*', '*vendor/*/Test*',
-                            \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
-                            \ '*var/cache*', '*var/log*']
+" Neomake
+let g:neomake_open_list=2
+let g:neomake_php_enabled_makers = ['php', 'phpmd', 'phpcs', 'phpstan']
+
+" automatically call on write
+call neomake#configure#automake('nrw')

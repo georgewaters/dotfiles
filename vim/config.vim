@@ -19,6 +19,10 @@ filetype indent plugin on
 " Highlight search results
 set hlsearch
 
+" Ensure :w triggers watch events
+set backupcopy=yes
+
+
 " Incrementally search
 set incsearch
 
@@ -62,10 +66,11 @@ autocmd BufWritePre * %s/\s\+$//e
 colorscheme gruvbox
 set background=dark
 
-" Nerd Tree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-\> :NERDTreeToggle %<CR>
+" FZF
+let g:fzf_buffers_jump = 1
+
+" ranger.vim
+let g:ranger_replace_netrw = 1
 
 " ProjectLocal
 let g:projectlocal_project_markers = ['.git', '.vimrc', 'package.json']
@@ -74,15 +79,44 @@ let g:projectlocal_project_markers = ['.git', '.vimrc', 'package.json']
 let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_github=1
 
-" Status line
-set statusline+=%{gutentags#statusline()}
-
-" Gutentags
-let g:gutentags_define_advanced_commands=1
+" Custom functions
+function! s:get_visual_selection()
+    " Why is this not a built-in Vim script function?!
+    let [line_start, column_start] = getpos("'<")[1:2]
+    let [line_end, column_end] = getpos("'>")[1:2]
+    let lines = getline(line_start, line_end)
+    if len(lines) == 0
+        return ''
+    endif
+    let lines[-1] = lines[-1][: column_end - (&selection == 'inclusive' ? 1 : 2)]
+    let lines[0] = lines[0][column_start - 1:]
+    return join(lines, "\n")
+endfunction
 
 " Keyboard shortcuts
 " Clear search result highlights
 nnoremap <silent> <leader>/ :noh<return>
+
+" Show file list with FZF
+map <C-p> :Files<CR>
+
+" Ranger at the current location
+map <C-\> :Ranger<CR>
+
+" Search uses of the word under the cursor
+nnoremap <leader>t :call fzf#vim#tags(expand('<cword>'))<return>
+" Search uses of the selected text
+command! SelectedTextTags call fzf#vim#tags(s:get_visual_selection())
+vnoremap <leader>t :<C-U>SelectedTextTags<return>
+
+" Search for filenames matching the name under the cursor
+nnoremap <leader>gf :call fzf#vim#files(expand('<cword>'))<return>
+" Search for files with the selected text
+command! SelectedTextFiles call fzf#vim#files(s:get_visual_selection())
+vnoremap <leader>gf :<C-U>SelectedTextFiles<return>
+
+" Insert a new line without leaving normal mode
+nnoremap <leader><return> i<return><esc>
 
 " Custom commands
 command! ESLintFix !npx eslint --fix %
