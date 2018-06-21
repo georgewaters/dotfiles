@@ -1,0 +1,5 @@
+[user]
+	email = gwaters92@gmail.com
+	name = George Waters
+[core]
+	excludesfile = /home/george/.config/git/gitignore

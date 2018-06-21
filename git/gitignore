@@ -25,3 +25,8 @@ Session.vim
 Desktop.ini
 ehthumbs.db
 Thumbs.db
+
+# CTags
+tags
+.ctags
+.ctags.d/
