@@ -12,6 +12,9 @@
     ~/.bash_profile:
       force: true
       path: shell/bash_profile
+    ~/.vimrc:
+      force: true
+      path: vim/vimrc
     $XDG_CONFIG_HOME/bash: shell/config/
     $XDG_CONFIG_HOME/vim: vim/
     $XDG_CONFIG_HOME/git: git/
