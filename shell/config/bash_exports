@@ -22,10 +22,6 @@ export HISTIGNORE="&:[bf]g:c:clear:history:exit:q:qh:ll:ls -l:pwd:* --help"
 # command history (default value is 500)
 export HISTSIZE=10000
 
-# Prefer US English and use UTF-8 encoding
-export LANG="en_US"
-export LC_ALL="en_US.UTF-8"
-
 # Use custom `less` colors for man pages
 # https://www.gnu.org/software/termutils/manual/termutils-2.0/html_chapter/tput_1.html
 export LESS_TERMCAP_md=$'\E[1;32m'   # begin bold mode
@@ -40,16 +36,8 @@ export MANPAGER="less -X"
 # shells instead of the default "last window closed" history
 # export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-# HouseSimple specific, for provisioning machines
-export HS_USER="georgewaters"
-
 # PATH and EVERYTHING for Docker
 export EVERYTHING=~/Code/everything
-export PATH=~/.bin:$PATH
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=~/.bin:$XDG_CONFIG_HOME/composer/vendor/bin:$PATH
 
 export DOCKER_USER="$(id -u):$(id -g)"

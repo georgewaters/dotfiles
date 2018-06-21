@@ -20,16 +20,6 @@ source_bash_files() {
     local file=""
     local i=""
 
-    declare -r -a FILES_TO_SOURCE=(
-        "bash_aliases"
-        "bash_exports"
-        "bash_functions"
-        "bash_options"
-        "bash_prompt"
-        "bash.local"  # for local settings that should
-                      # not be under version control
-    )
-
     if [ -d $BASH_CONFIG_PATH ]; then
         for file in $BASH_CONFIG_PATH/*; do
             source $file
@@ -45,7 +35,8 @@ main() {
 
     source_bash_files
     enable_programmable_completion
-
+    eval "$(chef shell-init bash)"
+    source /usr/share/nvm/init-nvm.sh
 }
 
 main
