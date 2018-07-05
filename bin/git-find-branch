@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# Requires FZF to be installed - https://github.com/junegunn/fzf
+git branch "$@" | fzf | xargs git checkout
