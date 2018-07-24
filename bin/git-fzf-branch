@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
 # Requires FZF to be installed - https://github.com/junegunn/fzf
-git branch --sort=committerdate "$@" | fzf | xargs git checkout
+git branch --sort=-committerdate "$@" | fzf | xargs git checkout
