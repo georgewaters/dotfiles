@@ -8,6 +8,7 @@ endif
 " Install Vim Plugins with Vim Plug
 call plug#begin($VIM_CONFIG_PATH . '/plugged')
 Plug 'ajh17/VimCompletesMe'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'jiangmiao/auto-pairs'
