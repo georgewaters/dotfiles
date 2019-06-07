@@ -80,7 +80,8 @@ fi
 alias :q="exit"
 alias c="clear"
 alias ch="history -c && > ~/.bash_history"
-alias e="vim"
+alias e="$EDITOR"
+alias vim="nvim"
 alias g="git"
 alias ll="ls -lah"
 alias m="man"
@@ -163,5 +164,6 @@ fi
 # HouseSimple
 
 alias who-has-sandbox='ssh -q legacy-site-01.apps.sandbox.hs tail -1 /srv/apps/sites/legacy/master/revisions.log'
+alias hsde="VAGRANT_CWD=$HS_EVERYTHING_PATH/infrastructure/vagrant/dev-env vagrant"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

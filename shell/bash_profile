@@ -20,11 +20,12 @@ source_bash_files() {
     local file=""
     local i=""
 
-    if [ -d $BASH_CONFIG_PATH ]; then
-        for file in $BASH_CONFIG_PATH/*; do
-            source $file
-        done
-    fi
+    source $BASH_CONFIG_PATH/bash_exports
+    source $BASH_CONFIG_PATH/bash_aliases
+    source $BASH_CONFIG_PATH/bash_options
+    source $BASH_CONFIG_PATH/bash_logout
+    source $BASH_CONFIG_PATH/bash_prompt
+    source $BASH_CONFIG_PATH/bash_functions
 }
 
 # ----------------------------------------------------------------------

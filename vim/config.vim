@@ -22,7 +22,6 @@ set hlsearch
 " Ensure :w triggers watch events
 set backupcopy=yes
 
-
 " Incrementally search
 set incsearch
 
@@ -62,9 +61,10 @@ augroup END " }
 " Automatically remove trailing whitespace
 autocmd BufWritePre * %s/\s\+$//e
 
-" Colour scheme from https://github.com/morhetz/gruvbox
+" Colour scheme
 colorscheme gruvbox
 set background=dark
+let g:airline_theme='gruvbox'
 
 " FZF
 let g:fzf_buffers_jump = 1
@@ -78,6 +78,11 @@ let g:projectlocal_project_markers = ['.git', '.vimrc', 'package.json']
 " Vim Markdown
 let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_github=1
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Custom functions
 function! s:get_visual_selection()
@@ -117,6 +122,3 @@ vnoremap <leader>gf :<C-U>SelectedTextFiles<return>
 
 " Insert a new line without leaving normal mode
 nnoremap <leader><return> i<return><esc>
-
-" Custom commands
-command! ESLintFix !npx eslint --fix %

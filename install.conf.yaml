@@ -15,6 +15,9 @@
     ~/.vimrc:
       force: true
       path: vim/vimrc
+    $XDG_CONFIG_HOME/nvim/init.vim:
+      force: true
+      path: vim/vimrc
     $XDG_CONFIG_HOME/bash: shell/config/
     $XDG_CONFIG_HOME/vim: vim/
     $XDG_CONFIG_HOME/git: git/

@@ -6,7 +6,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Make vim the default editor
-export EDITOR="vim"
+export EDITOR="nvim"
 
 # Ignore commands that start with spaces and duplicates
 export HISTCONTROL=ignoreboth
@@ -38,6 +38,9 @@ export MANPAGER="less -X"
 
 # PATH and EVERYTHING for Docker
 export EVERYTHING=~/Code/everything
-export PATH=~/.bin:$XDG_CONFIG_HOME/composer/vendor/bin:$PATH
+export PATH=~/.bin:$(python -m site --user-base)/bin:$XDG_CONFIG_HOME/composer/vendor/bin:$PATH
+
+export HSDE_CODE_PATH=~/Code/everything
+export HS_EVERYTHING_PATH=$HSDE_CODE_PATH
 
 export DOCKER_USER="$(id -u):$(id -g)"

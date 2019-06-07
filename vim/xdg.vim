@@ -22,6 +22,3 @@ if !isdirectory(s:cache_path . '/undo')
 endif
 execute 'set undodir=' . escape(s:cache_path, '') . '/undo//'
 set undofile
-
-set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
-let g:netrw_home=$XDG_CACHE_HOME . '/vim'

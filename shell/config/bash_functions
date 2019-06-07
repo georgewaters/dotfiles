@@ -1,6 +1,16 @@
 #!/bin/bash
 
 # ----------------------------------------------------------------------
+# | Housesimple VM                                                      |
+# ----------------------------------------------------------------------
+
+# Create data URI from a file
+
+hsvm() {
+    VAGRANT_CWD=$HS_EVERYTHING_PATH/infrastructure/vagrant/dev-env vagrant ssh -c "cd ~/code/infrastructure/vagrant/dev-env/ && make $1"
+}
+
+# ----------------------------------------------------------------------
 # | File System                                                        |
 # ----------------------------------------------------------------------
 
