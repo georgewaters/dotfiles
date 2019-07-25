@@ -9,13 +9,6 @@ set exrc
 set secure
 set encoding=utf-8
 
-" Turn on filetype detection
-filetype on
-" Turn on syntax highlighting
-syntax on
-" Turn on filetype-specific indentation
-filetype indent plugin on
-
 " Highlight search results
 set hlsearch
 

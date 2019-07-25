@@ -1,5 +1,7 @@
-" Automatically detect file types.
-filetype plugin indent on
+" Turn on syntax highlighting
+syntax on
+" Turn on filetype-specific indentation
+filetype indent plugin on
 
 let $VIM_CONFIG_PATH = exists($XDG_CONFIG_HOME) ? $XDG_CONFIG_HOME.'/vim' : $HOME.'/.config/vim'
 

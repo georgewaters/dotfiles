@@ -7,26 +7,24 @@ endif
 
 " Install Vim Plugins with Vim Plug
 call plug#begin($VIM_CONFIG_PATH . '/plugged')
-Plug 'Shougo/deoplete.nvim'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
-Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
-Plug 'w0rp/ale'
-Plug 'pangloss/vim-javascript'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'Shougo/deoplete.nvim'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-scripts/auto-pairs-gentle'
+Plug 'w0rp/ale'
 call plug#end()
 

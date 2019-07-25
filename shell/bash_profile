@@ -33,11 +33,8 @@ source_bash_files() {
 # ----------------------------------------------------------------------
 
 main() {
-
     source_bash_files
     enable_programmable_completion
-    eval "$(chef shell-init bash)"
-    source /usr/share/nvm/init-nvm.sh
 }
 
 main
